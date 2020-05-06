@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Lora", serif;
+  background: #344872;
+  color: #fff;
+  line-height: 1.4;
+}
+/* input {
+  -webkit-appearance: none; 
+  appearance: none;
+} */
+#logo {
+  font-family: "Lobster", cursive;
+}
+footer #logo {
+  padding-left: 0;
+}
+.container {
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+.form-container {
+  background: #fff;
+  padding: 15px 20px;
+  color: #333;
+}
+.form-box {
+}
+.form-container h1,
+.form-container p {
+  text-align: center;
+}
+.form-group {
+  padding: 10px 10px 20px 10px;
+  border-radius: 5%;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5%;
+}
+
+.flex-group {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+.flex-group > label {
+  padding-left: 13px;
+  position: relative;
+  bottom: 4px;
+}
+.big-label {
+  font-size: 18px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 1px solid gray;
+  /* Adjusts the position of the checkboxes on the text baseline */
+  vertical-align: -2px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  color: green;
+}
+#submit {
+  display: block;
+  width: 100%;
+  padding:10px;
+  margin-top: 20px;
+  background: #49c1a2;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+#submit:hover {
+  background: #37a08e;
+}
+#submit + p {
+  padding: 10px 0;
+}
+footer {
+  padding-top: 10px;
+  font-size: 0.75rem;
+}

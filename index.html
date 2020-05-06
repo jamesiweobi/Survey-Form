@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora&family=Oswald&display=swap" rel="stylesheet">
+  <title>Survey Form | Survey | Information Gathering | Data Mining Form</title>
+</head>
+
+<body>
+  <main id="main-body">
+
+      <h1 id="logo">Iweobi</h1>
+  
+    <div class="container">
+      <form action="process.php" id="survey-form">
+        <div class="form-container">
+          <div class="form-heading">
+            <div class="form-box">
+              <h1 id="title">Survey Form</h1>
+              <p id="description">
+                Thank you for taking the time to answer these questions. The following questions are about to knowing
+                how
+                well
+                and
+                successful webpages I've built are to you.
+              </p>
+            
+            <div class="form-group">
+              <label for="name" id="name-label" class="big-label">Name</label>
+              <input type="text" id="name" required placeholder="Please Enter Your Name.">
+            </div>
+            <div class="form-group">
+              <label for="email" id="email-label" class="big-label">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Please A Valid Email.">
+            </div>
+            <div class="form-group">
+              <label for="phone-number" id="number-label" class="big-label">Phone Number</label>
+              <input type="number" id="phone-number" name="phone-number" required
+                placeholder="Please Enter Your Phone-Number." min="07" max="10000000000">
+            </div>
+            
+          </div>
+
+          <div class="form-box">
+            <div class="form-group">
+              <label for="heard-about" id="drop-down" class="big-label">Have you checked out any of my previous webpages?</label>
+              <div class="flex-group">
+                <input type="radio" name="heard-about" value="yes" id="heard-about-input">
+                <label for="heard-about-input">Yes</label>
+              </div>
+              <div class="flex-group">
+                <input type="radio" name="heard-about" value="no" id="heard-about-input">
+                <label for="heard-about-input">No</label>
+              </div>
+              <div class="flex-group">
+                <input type="radio" name="heard-about" value="dont-care" id="heard-about-input">
+                <label for="heard-about-input">Don't Care </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-group">
+              <label for="find-about" class="big-label">What's your opinion of my work?</label>
+              <select name="find-about" id="find-about-select">
+                <option value="amazing" selected>Amazing</option>
+                <option value="average">Average</option>
+                <option value="giveup!">Giveup!</option>
+                <option value="learn-more!">Learn-more!</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-group">
+              <label for="employ-me" class="big-label">Would you employ me to build your web-site or web projects?</label>
+              <div class="flex-group">
+                <input type="radio" name="employ-me" value="yes" id="employ-me">
+                <label for="employ-me">Yes</label>
+              </div>
+              <div class="flex-group">
+                <input type="radio" name="employ-me" value="no" id="employ-me">
+                <label for="employ-me">No</label>
+              </div>
+              <div class="flex-group">
+                <input type="radio" name="employ-me" value="dont-care" id="employ-me">
+                <label for="employ-me">Don't Care </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <div class="form-group">
+              <label for="web-visits" class="big-label">How many website do you visit in a day?</label>
+              <div class="flex-group">
+                <input type="radio" name="web-visits" value="0-9" id="web-visits-input">
+                <label for="web-visits-input">0-9</label>
+              </div>
+              <div class="flex-group">
+                <input type="radio" name="web-visits" value="10-20" id="web-visits-input">
+                <label for="web-visits-input">10-20</label>
+              </div>
+              <div class="flex-group">
+                <input type="radio" name="web-visits" value="21-30" id="web-visits-input">
+                <label for="web-visits-input">21-30</label>
+              </div>
+              <div class="flex-group">
+                <input type="radio" name="web-visits" value="not-your-business" id="web-visits-input">
+                <label for="web-visits-input">None of Your Business</label>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <div class="form-group">
+                <label for="browser-name" id="browser-name" class="big-label">What is your prefered browser?</label>
+                <div class="flex-group">
+                  <input type="checkbox" name="browser-name" value="chrome" id="browser-name">
+                  <label for="browser-name">Chrome</label>
+                </div>
+                <div class="flex-group">
+                  <input type="checkbox" name="browser-name" value="Opera" id="browser-name">
+                  <label for="browser-name">Opera</label>
+                </div>
+                <div class="flex-group">
+                  <input type="checkbox" name="browser-name" value="Mozilla" id="browser-name">
+                  <label for="browser-name">Mozilla Firefox</label>
+                </div>
+                <div class="flex-group">
+                  <input type="checkbox" name="browser-name" value="safari" id="browser-name">
+                  <label for="browser-name">Safari</label>
+                </div>
+                <div class="flex-group">
+                  <input type="checkbox" name="browser-name" value="babalawo" id="browser-name">
+                  <label for="browser-name">Babalawo Mirrow</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-box">
+              <div class="form-group">
+                <label for="web-content" id="web-content" class="big-label">Please select your prefered web-content.</label>
+                <div class="flex-group">
+                  <input type="radio" name="web-content" value="sports" id="web-content-input">
+                  <label for="web-content-input">Sports</label>
+                </div>
+                <div class="flex-group">
+                  <input type="radio" name="web-content" value="news" id="web-content-input">
+                  <label for="web-content-input">News</label>
+                </div>
+                <div class="flex-group">
+                  <input type="radio" name="web-content" value="entertainment" id="web-content-input">
+                  <label for="web-content-input">Entertainment</label>
+                </div>
+                <div class="flex-group">
+                  <input type="radio" name="web-content" value="others" id="web-content-input">
+                  <label for="web-content-input">Others, please state below.</label>
+                </div>
+                <textarea name="web-content" id="web-content-others" cols="35" rows="6"></textarea>
+              </div>
+              <button type="submit" id="submit">Submit</button>
+              <p>Click on the button to submit the form.</p>
+            </div>
+          </div>
+
+
+
+      </form>
+      <div>
+        <footer>
+          <p>Survey powered by <span id="logo">Iweobi</span></p>
+        </footer>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>
